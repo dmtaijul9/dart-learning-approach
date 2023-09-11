@@ -1,14 +1,19 @@
 void main() {
-  List<String> myList = ["A", "B", "C", "D"];
+  final gender = Gender.Male;
 
-  print(myList);
-  print(myList.length);
-  print(myList[2]);
-
-  myList.add('E');
-  print(myList);
-  myList.addAll(["F", "G"]);
-  print(myList);
-  myList.insert(0, "AA");
-  print(myList);
+  switch (gender) {
+    case Gender.Male:
+      print('Gender is Male');
+      break;
+    case Gender.Female:
+      print('Gender is Female');
+      break;
+    case Gender.Unknown:
+      print('Gender is Unknown');
+      break;
+    default:
+      print("Gender is not definded");
+  }
 }
+
+enum Gender { Male, Female, Unknown }
