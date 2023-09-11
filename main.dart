@@ -1,23 +1,14 @@
 void main() {
-  String a = "We";
-  String b = "Are";
-  String c = "Bangladeshi";
-  String d = "Fighter";
+  List myList = ["A", "B", "C", "D"];
 
-  // String Literals
+  print(myList);
+  print(myList.length);
+  print(myList[2]);
 
-  String e = "We" "Are" "Bangladeshi" "Fighter";
-
-  //1st step
-  print(a + b + c + d);
-
-  // 2nd step
-  print("$a$b$c$d");
-  //3rd step
-  print(e);
-
-  //4th step
-  List<String> f = ["We", "Are", "Bangladeshi", "Fighter"];
-
-  print(f.join(","));
+  myList.add('E');
+  print(myList);
+  myList.addAll(["F", "G"]);
+  print(myList);
+  myList.insert(0, "AA");
+  print(myList);
 }
