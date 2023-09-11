@@ -1,5 +1,5 @@
 void main() {
-  List myList = ["A", "B", "C", "D"];
+  List<String> myList = ["A", "B", "C", "D"];
 
   print(myList);
   print(myList.length);
